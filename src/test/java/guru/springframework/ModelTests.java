@@ -9,5 +9,9 @@ import org.junit.jupiter.api.TestInfo;
 @Tag("models")
 public interface ModelTests {
 
+    @BeforeEach
+    default void beforeEachConsoleOutput(TestInfo testInfo) {
+        System.out.println("Running Tests - " + testInfo.getDisplayName());
+    }
 
 }
