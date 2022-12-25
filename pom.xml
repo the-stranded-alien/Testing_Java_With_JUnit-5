@@ -106,6 +106,8 @@
                     <argLine>
                         --illegal-access=permit
                     </argLine>
+                    <groups> models </groups>
+                    <excludedGroups> controllers </excludedGroups>
                 </configuration>
             </plugin>
             <plugin>
